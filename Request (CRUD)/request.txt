@@ -1,0 +1,25 @@
+CREATE TABLE (Создание таблицы)
+
+CREATE TABLE table_name(
+colum_1 serial PRIMARY KEY
+colum_2 varchar (50)
+colum_3 integer);
+------------------------------------
+
+INSERT INTO (Добавление записей в таблицу)
+
+INSERT INTO (colum_1, colum_2, colum_3)
+VALUES (1, 'Alex', 35);
+------------------------------------
+
+SELECT (Получение данных из таблицы)
+
+SELECT * from table_name;                   #  Получение всех данных из таблицы\
+SELECT colum_1, colum_2 from table_name;    #  Получение данных из определенных колонок таблицы\
+SELECT colum_2 from table_name              #  Получение данных из определенных колонок таблицы
+WHERE colum_2 = 'Alex';                        с дополнительным условием\
+SELECT colum_1, colum_2 from table_name     #  Получение данных из определенных колонок таблицы
+ORDER BY colum_1 DESC|ASC                      и сортировка по колонке\
+
+
+
